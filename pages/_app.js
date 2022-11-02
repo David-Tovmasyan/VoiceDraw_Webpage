@@ -2,6 +2,7 @@
 // styles/global.scss
 
 import '../styles/global.scss';
+import '../styles/Header.scss';
 
 export default function MyApp({ Component, pageProps }) {
     return <Component {...pageProps} />

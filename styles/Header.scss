@@ -1,0 +1,57 @@
+@use 'global.scss';
+
+// $UIbackground: #ecf0f1;
+// $UIspecialText: #3498db;
+// $textBigSize: 64px;
+// $textNormalSize: 20px;
+// $fontFamily: 'Segoe UI', sans-serif;
+
+header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    border-bottom: 1px solid black;
+    background-color: white;
+
+    .logo {
+        align-items: flex-end;
+        max-width: fit-content;
+
+        img {
+            margin: 20px 20px;
+        }
+    }
+
+    nav {
+        display: flex;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        align-items: center;
+        // gap: 2vw;  doesn't work in google chrome
+        justify-content: space-around;
+        div {
+            font-size: global.$textNormalSize;
+            margin-right: 2vw; // instead of gap
+            font-weight: 500;
+
+            a {
+                color: rgba($color: #000000, $alpha: 0.6);
+                text-decoration: none;
+                font-weight: 400;
+                transition: 0.2s;
+
+                &:hover {
+                    color: black;
+                }
+            }
+            
+        }
+
+        .active :nth-child(1) {
+            // giving nav > div.active > Link (a) styles
+            color: global.$UIspecialText;
+        }
+
+        
+    }
+}
