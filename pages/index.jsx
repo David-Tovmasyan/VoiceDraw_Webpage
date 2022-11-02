@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <>
       <Head>
-        <title>Next JS Project</title>
+        <title>Voice Control Webpage</title>
       </Head>
       <Header />
       <Footer />
