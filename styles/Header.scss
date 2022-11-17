@@ -12,7 +12,8 @@ header {
     grid-template-rows: 1fr;
     border-bottom: 1px solid black;
     background-color: white;
-
+    height: 80px;
+    min-height: 80px;
     .logo {
         align-items: flex-end;
         max-width: fit-content;
@@ -33,7 +34,6 @@ header {
             font-size: global.$textNormalSize;
             margin-right: 2vw; // instead of gap
             font-weight: 500;
-
             a {
                 color: rgba($color: #000000, $alpha: 0.6);
                 text-decoration: none;

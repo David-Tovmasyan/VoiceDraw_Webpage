@@ -1,0 +1,35 @@
+$grey: rgb(200, 200, 200);
+
+footer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 30px;
+    span {
+        margin: 0 6px;
+        color: $grey;
+    }
+
+    .author {
+        margin-right: 4px;
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            background-color: rgb(255, 255, 255);
+            border-radius: 100px;
+            transition: 0.1s;
+        }
+
+        img:hover {
+            background-color: $grey;
+        }
+    }
+}

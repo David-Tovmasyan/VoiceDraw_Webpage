@@ -1,0 +1,22 @@
+.table {
+
+
+    .row {
+        display: flex;
+
+
+        .element {
+            border: 1px solid black;
+            padding: 10px;
+            width: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            
+        }
+        .hd{
+            font-weight: 600;
+        }
+    }
+    
+}
